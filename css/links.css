@@ -1,0 +1,57 @@
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#links > a {
+  text-decoration: none;
+  color: darkcyan;
+  padding: 15px;
+  display: block;
+  margin: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(255, 183, 3, 1);
+  border-radius: 50px;
+  -o-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+#links > a:hover {
+  background-color: rgba(251, 133, 0, 1);
+  color: white;
+  -webkit-transition: color 0.8s;
+  -moz-transition: color 0.8s;
+  -o-transition: color 0.8s;
+  transition: color 0.8s;
+  opacity: 1;
+}
+#links > a > i {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+#links > a:hover > i {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 23px;
+}
+
+#links {
+  max-width: 500px;
+  min-width: 400px;
+  margin: auto;
+}

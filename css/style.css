@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap");
+
+body {
+  background-color: #023047;
+  /* background-color: #fb8500; */
+  color: #fb8500;
+  font-family: "Comfortaa", cursive;
+}
+
+center-text {
+  text-align: center;
+}
+h1#main-title {
+  color: #fb8500;
+  /* color: #023047; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #219ebc;
+}
+
+.yellow-bg {
+  background-color: #ffb703;
+}
+
+.yellow {
+  color: #ffb703;
+}
+
+.bg-dark-blue {
+  background-color: #023047;
+}
+
+#main_page:hover {
+  color: #fb8500;
+}
+
+.light-blue {
+  background-color: #219ebc;
+}
+
+/* nav animation for underlining */
+a.middle {
+  position: relative;
+}
+
+a.middle:hover {
+  color: #fb8500;
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #219ebc;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Social media barside*/
+.social {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50px, 0);
+  z-index: 1000;
+}
+
+.social a {
+  color: #023047;
+  /* background: rgba(33, 158, 188, 0.5); */
+  background: rgba(251, 133, 0, 1);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin: 0px;
+  padding: 20px;
+  width: 100px;
+  text-align: right;
+  border-radius: 50x;
+  transition: 1s;
+  transition-property: transform;
+  z-index: 1000;
+}
+
+.social a:hover {
+  transform: translate(30px, 0);
+  color: #219ebc;
+}
+.social i {
+  margin-left: 10px;
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+}

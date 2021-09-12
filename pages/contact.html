@@ -24,7 +24,7 @@
     <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
-          <a href="index.html" class="nav-link yellow"
+          <a href="../index.html" class="nav-link yellow"
             ><h3 class="float-md-start mb-0 mt-2 nav-title">
               Inicio
             </h3></a
@@ -39,10 +39,10 @@
             <a class="nav-link yellow middle p-0 m-3" href="cv.html"
               >My skills</a
             >
-            <a class="nav-link yellow middle p-0 m-3" href="/pages/links.html"
+            <a class="nav-link yellow middle p-0 m-3" href="links.html"
               >My links</a
             >
-            <a class="nav-link yellow middle p-0 m-3" href="/pages/contact.html"
+            <a class="nav-link yellow middle p-0 m-3" href="contact.html"
               >Get in touch</a
             >
           </nav>
@@ -55,14 +55,14 @@
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12846.298784170815!2d-99.19608735813132!3d19.371397030722676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1631312614786!5m2!1ses!2smx"
               width="100%"
               height="100%"
-              style="border: 0;"
+              style="border: 0; border-radius: 8px;"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
           </div>
           <div class="col-md-4 yellow-bg mb-5" id="form">
-            <h1 class="text-center mt-2">Get in touch</h1>
-            <form>
+            <h1 class="text-center mt-4">Get in touch</h1>
+            <form class="needs-validation">
               <div class="row mb-3">
                 <div class="col-sm-12">
                   <input
@@ -70,6 +70,7 @@
                     class="form-control"
                     id="inputNombre"
                     placeholder="Name"
+                    required
                   />
                 </div>
               </div>
@@ -78,18 +79,21 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="inputPassword3"
+                    id="email"
                     placeholder="Email"
+                    required
                   />
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-sm-12">
                   <input
-                    type="number"
+                    type="tel"
                     class="form-control"
-                    id="inputNombre"
+                    id="phone_number"
                     placeholder="Phone number"
+                    pattern="[+]{1}[0-9]{11,14}"
+                    required
                   />
                 </div>
               </div>
@@ -135,8 +139,8 @@
                   <label class="visually-hidden" for="specificSizeSelect"
                     >Preference</label
                   >
-                  <select class="form-select" id="specificSizeSelect">
-                    <option value="country">Country</option>
+                  <select class="form-select" id="specificSizeSelect" required>
+                    <option selected disabled value="country">Country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Åland Islands</option>
                     <option value="AL">Albania</option>

@@ -48,20 +48,34 @@
     text-align: center;
 }
 
+.project_number{
+    font-size: 100px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+}
+
+
+
+.vertical-line{
+    border-right: 6px solid #fb8500;
+    /* border-right: 6px solid #219ebc; */
+    height:80%;
+    display:block;
+}
+
+
 @media screen and (max-width: 992px){
     #main_message{
         margin-top: 180px;
     }
 
-}
+    .vertical-line{
+        display: none;
+    }
 
-.project_number{
-    font-size: 100px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-}
-
-.vertical-line{
-    border-right: 6px solid #fb8500;
-    height:80%;
+    .project_number{
+        writing-mode: horizontal-tb;
+        font-size: 80px;
+    }
 }

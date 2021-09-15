@@ -7,6 +7,13 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
+h1{
+  color: #fb8500;
+  /* color: #023047; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 60px;
+}
+
 h1#main-title {
   color: #fb8500;
   /* color: #023047; */
@@ -106,6 +113,10 @@ h1#main-title {
 
 .light-blue {
   background-color: #219ebc;
+}
+
+.fit-content{
+  object-fit: contain;
 }
 
 /* nav animation for underlining */

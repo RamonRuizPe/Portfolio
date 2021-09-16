@@ -16,45 +16,51 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/png" href="img/code.png"/>
+    <link rel="icon" type="image/png" href="../img/code.png"/>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/contact.css" />
-    <title>Contact me</title>
+    <title>Contact</title>
   </head>
-  <body class="d-flex h-100 text-center">
+  <body>
+    <!-- Social media side-bar -->
     <div class="social">
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:rualejandro.ra@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/RamonRuizPe"><i class="fab fa-github"></i></a>
+      <a href="www.linkedin.com/in/ramón-alejandro-ruiz-pérez-122077221"><i class="fab fa-linkedin-in"></i></a>
     </div>
-    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          <a href="../index.html" class="nav-link yellow"
-            ><h3 class="float-md-start mb-0 mt-2 nav-title">
-              Inicio
-            </h3></a
-          >
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a
-              class="nav-link yellow middle p-0 m-3"
-              aria-current="page"
-              href="#"
-              >Projects</a
-            >
-            <a class="nav-link yellow middle p-0 m-3" href="cv.html"
-              >My skills</a
-            >
-            <a class="nav-link yellow middle p-0 m-3" href="links.html"
-              >My links</a
-            >
-            <a class="nav-link yellow middle p-0 m-3" href="contact.html"
-              >Get in touch</a
-            >
-          </nav>
-        </div>
-      </header>
-      <div class="container mt-5">
+    <div class="container fixed-top">
+      <!-- PC content -->
+      <header class="show-pc">
+        <a href="../index.html" class="nav-link yellow"><h3 class="float-md-start mt-4 nav-title text-center" style="margin-left: 14px;">
+            Inicio
+          </h3></a>
+        <nav class="nav nav-masthead justify-content-end mt-2 nav-bar">
+          <a class="nav-link yellow middle p-0 m-3" aria-current="page" href="projects.html"
+            >Projects</a>
+          <a class="nav-link yellow middle p-0 m-3" href="cv.html">My skills</a>
+          <a class="nav-link yellow middle p-0 m-3" href="links.html"
+            >My links</a>
+          <a class="nav-link yellow middle p-0 m-3" href="contact.html"
+            >Get in touch</a>
+        </nav>
+    </header>
+    <!-- Mobile content -->
+    <header class="show-mobile">
+        <a href="../index.html" class="nav-link yellow"><h3 class="float-md-start mt-4 nav-title text-center" style="margin-left: 14px;">
+            Inicio
+          </h3></a>
+        <nav class="nav nav-masthead justify-content-center mt-2 nav-bar">
+          <a class="nav-link yellow middle p-0 m-3" aria-current="page" href="projects.html"
+            >Projects</a>
+          <a class="nav-link yellow middle p-0 m-3" href="cv.html">My skills</a>
+          <a class="nav-link yellow middle p-0 m-3" href="links.html"
+            >My links</a>
+          <a class="nav-link yellow middle p-0 m-3" href="contact.html"
+            >Get in touch</a>
+        </nav>
+    </header>
+    </div>
+      <div class="container mt-med main_cont">
         <div class="row">
           <div class="col-md-8 mb-5">
             <iframe
@@ -435,6 +441,16 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="position-relative mt-5">
+      <footer class="position-absolute bottom-0 start-50 translate-middle-x">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          © 2021 Ramón Ruiz
+          <a class="ms-5" href="https://github.com/RamonRuizPe"><i class="fab fa-github"></i></a>
+          <a class="ms-3" href="www.linkedin.com/in/ramón-alejandro-ruiz-pérez-122077221"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </footer>
     </div>
   </body>
   <script

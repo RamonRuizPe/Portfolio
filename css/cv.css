@@ -1,4 +1,30 @@
 .cv_icon{
-    font-size: 20px;
     color:#219ebc;
 }
+
+#cv-show-pc{
+    display: block;
+}
+
+#cv-show-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    .main_cont{
+      margin-top: 200px;
+      z-index: -1;
+    }
+  
+    .page_screen{
+      margin-bottom: 150px;
+    }
+  
+    #cv-show-mobile{
+      display: block;
+    }
+  
+    #cv-show-pc{
+      display:none;
+    }
+  }

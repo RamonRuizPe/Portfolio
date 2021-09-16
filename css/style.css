@@ -111,7 +111,11 @@ h1#main-title {
   color: #fb8500;
 }
 
-.light-blue {
+.light-blue{
+  color:#219ebc;
+}
+
+.light-blue-bg {
   background-color: #219ebc;
 }
 
@@ -186,6 +190,23 @@ a.middle:hover:before {
   height: 20px;
 }
 
+footer a{
+  font-size: 20px;
+  color:#fb8500;
+  -webkit-transition: color 0.8s;
+  -moz-transition: color 0.8s;
+  -o-transition: color 0.8s;
+  transition: color 0.8s;
+}
+
+footer a:hover{
+  color:#ffb703;
+  -webkit-transition: color 0.8s;
+  -moz-transition: color 0.8s;
+  -o-transition: color 0.8s;
+  transition: color 0.8s;
+}
+
 .page_screen{
   height: 100vh;
 }
@@ -198,7 +219,7 @@ a.middle:hover:before {
   display: inline;
 }
 @media screen and (max-width: 992px){
-  #main_cont{
+  .main_cont{
     margin-top: 200px;
     z-index: -1;
   }

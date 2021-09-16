@@ -18,12 +18,19 @@
     <title>CV</title>
   </head>
   <body>
+    <!-- Social media side-bar -->
+    <div class="social">
+      <a href="mailto:rualejandro.ra@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/RamonRuizPe"><i class="fab fa-github"></i></a>
+      <a href="www.linkedin.com/in/ramón-alejandro-ruiz-pérez-122077221"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
       <div class="container fixed-top">
-        <header>
+        <header class="show-pc">
             <a href="../index.html" class="nav-link yellow"><h3 class="float-md-start mt-4 nav-title text-center" style="margin-left: 14px;">
                 Inicio
               </h3></a>
-            <nav class="nav nav-masthead justify-content-end mt-3">
+            <nav class="nav nav-masthead justify-content-end mt-2">
               <a class="nav-link yellow middle p-0 m-3" aria-current="page" href="projects.html"
                 >Projects</a>
               <a class="nav-link yellow middle p-0 m-3" href="cv.html">My skills</a>
@@ -33,192 +40,351 @@
                 >Get in touch</a>
             </nav>
         </header>
+
+            <!-- Mobile content -->
+        <header class="show-mobile">
+          <a href="../index.html" class="nav-link yellow"><h3 class="float-md-start mt-4 nav-title text-center" style="margin-left: 14px;">
+              Inicio
+            </h3></a>
+          <nav class="nav nav-masthead justify-content-center mt-2 nav-bar">
+            <a class="nav-link yellow middle p-0 m-3" aria-current="page" href="projects.html"
+              >Projects</a>
+            <a class="nav-link yellow middle p-0 m-3" href="cv.html">My skills</a>
+            <a class="nav-link yellow middle p-0 m-3" href="links.html"
+              >My links</a>
+            <a class="nav-link yellow middle p-0 m-3" href="contact.html"
+              >Get in touch</a>
+          </nav>
+        </header>
       </div>
-
-
-
-      
-      <div class="container mt-med">
+      <!-- PC display -->
+      <div class="container mt-med mb-5" id="cv-show-pc">
           <div class="row">
-            <div class="col-md-5 col-4 fixed-top one mt-large">
-                    <h1 class="text-center">
-                        Ramón Alejandro Ruiz Pérez
-                      </h1>
-                      <div class="text-center">
-                        <img src="../img/Ramon_ok.jpg" class="img-fluid" />
-                      </div>
+            <div class="col-md-5 col-4 fixed-top one mt-med ms-5">
+              <div class="text-center">
+                <h1>
+                  About me
+                </h1>
+                <img src="../img/Ramon_ok.jpg" class="img-fluid" />
+              </div>
             </div>
-            <div class="col-md-7 offset-sm-6 two">
+            <div class="col-md-7 offset-sm-6 two me-5">
                 <div>
-                    <h2>
-                      <i class="fas fa-brain cv_icon"></i>
-                      Perfil personal
+                  <h2 class="light-blue-bg dark-blue text-center" style="border-radius: 4px;">Ramón Alejando Ruiz Pérez</h2>
+                    <h2 class="yellow mt-3">
+                      <i class="fas fa-brain"></i>
+                      Personal profile
                     </h2>
-                    <p style="margin-left: 30px;">
-                      Soy un estudiante apasionado por aprender, con experiencia en desarrollo
-                      web y lenguajes de programación como C++, Python y Java.
+                    <p class="ms-3">
+                      Im a IT student who likes to keep learning, with experience in web development
+                      and programming languages like Python, C++ and Java.
                     </p>
                   </div>
-                  <div class="edu">
-                    <h2>
-                      <i
-                        class="fas fa-book-open cv_icon"
-                      ></i>
-                      Educación
-                    </h2>
-                    <p style="margin-left: 30px;">
-                      Técnico en sistemas digitales por el Bachillerato Tecnológico Plantel
-                      Azteca, 2018.
-                    </p>
-                    <ul style="margin-left: 30px;">
-                      <li>Graduado como mejor promedio.</li>
-                      <li>
-                        Representante del bachillerato en el Modelo de Naciones Unidas en la
-                        Universidad Anáhuac, 2018.
-                      </li>
-                    </ul>
+                  <div class="row mt-4 mb-3">
+                    <div class="col-md-6">
+                      <h2  class="yellow">
+                        <i
+                          class="fas fa-book-open"
+                        ></i>
+                        Education
+                      </h2>
+                      <p class="ms-3">
+                        Digital systems technician by Bachillerato Tecnológico Plantel Azteca, 2019.
+                      </p>
+                      <ul class="ms-3">
+                        <li>Graduated with the highest grade.</li>
+                        <li>
+                          Representative of the high school in the United Nations Model at the Anahuac University, 2019.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="yellow">
+                          <i
+                            class="fas fa-book-reader"
+                          ></i>
+                          Complementary eduaction
+                        </h2>
+                        <ul class="ms-3">
+                          <li>Word, Excel and PowerPoint certification by Microsoft.</li><br>
+                          <li>CCNA4 networking course by Cisco.</li><br>
+                          <li>Azure Fundamentals course</li>
+                        </ul>
+                    </div>
                   </div>
-                  <div class="edu_compl">
-                    <h2>
-                      <i
-                        class="fas fa-book-reader cv_icon"
-                      ></i>
-                      Educación complementaria
-                    </h2>
-                    <ul style="margin-left: 30px;">
-                      <li>Certificación en Word, Excel y PowerPoint por Microsoft.</li>
-                      <li>Curso CCNA4 en redes por Cisco.</li>
-                      <li>Curso en Azure Fundamentals</li>
-                    </ul>
-                  </div>
+                  
                   <div class="job_xp">
-                    <h2>
+                    <h2 class="yellow">
                       <i
-                        class="fas fa-briefcase cv_icon"
+                        class="fas fa-briefcase "
                       ></i>
-                      Experiencia laboral
+                      Job experience
                     </h2>
-                    <h3 style="margin-left: 30px; margin-bottom: 5px;">
-                      Freelance en desarrollo web
-                    </h3>
-                    <p style="margin-left: 30px; margin-top: 0;">
-                      DE FEBRERO 2021 A LA FECHA
-                    </p>
-                    <ul style="margin-left: 30px;">
-                      <li>Desarrollo de frontend y backend</li>
-                      <li>Monitoreo de estadísticas de los sitios desarrollados</li>
-                      <li>
-                        Actualización constante de los sitios para permitir el crecimiento de
-                        los mismos.
-                      </li>
-                    </ul>
-              
-                    <h3 style="margin-left: 30px; margin-bottom: 5px;">
-                      Becario en el área de finanzas de Relaciones Públicas de la Universidad
-                      Panamericana
-                    </h3>
-                    <p style="margin-left: 30px; margin-top: 0;">
-                      DE AGOSTO 2019 A LA FECHA
-                    </p>
-                    <ul style="margin-left: 30px;">
-                      <li>
-                        Encargado del registro de facturas de los gastos presentes en el área.
-                      </li>
-                      <li>
-                        Seguimiento de los gastos procedentes de la promoción en los estados
-                        del país.
-                      </li>
-                      <li>
-                        Elaboración de registros semestrales del área de Relaciones públicas.
-                      </li>
-                    </ul>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="mt-3">
+                          Web development freelance
+                        </h3>
+                        <p class="ms-3 mb-0">
+                          SINCE FEBRUARY 2021
+                        </p>
+                        <ul class="ms-3">
+                          <li>Front and Backend development.</li><br><br>
+                          <li>Monitoring of statistics of the developed sites.</li><br><br>
+                          <li>Constant updating of the sites to allow their growth.</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="mt-3">
+                          Intern in the Public Relations finance area of the Universidad Panamericana 
+                        </h3>
+                        <p class="ms-3 mb-0">
+                          SINCE AUGUST 2019
+                        </p>
+                        <ul class="ms-3">
+                          <li>
+                            Responsible for recording expenses bills present in the area. 
+                          </li>
+                          <li>
+                            Monitoring of the expenses from the promotion in the states of the country.
+                          </li>
+                          <li>
+                            Preparation of biannual records for the Public Relations area. 
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="skills">
-                    <h2>
+                    <h2 class="yellow">
                       <i
-                        class="fab fa-audible cv_icon"
+                        class="fab fa-audible "
                       ></i>
-                      Habilidades
+                      Skills
                     </h2>
-                    <ul>
-                      <li><b>HTML5:</b> Avanzado.</li>
-                      <li><b>Javascript:</b> Intermedio.</li>
-                      <li><b>CSS:</b> Avanzado.</li>
-                      <li><b>NodeJs:</b> Intermedio.</li>
-                      <li><b>Php:</b> Intermedio.</li>
-                      <li><b>MySQL:</b> Avanzado.</li>
-                      <li><b>C++:</b> Intermedio.</li>
-                      <li><b>Python:</b> Intermedio.</li>
-                      <li><b>C#:</b> Intermedio.</li>
-                      <li><b>Excel:</b> Avanzado.</li>
-                    </ul>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul>
+                          <li><b>HTML5:</b> Advanced.</li>
+                          <li><b>Javascript:</b> Intermediate.</li>
+                          <li><b>CSS:</b> Advanced.</li>
+                          <li><b>NodeJs:</b> Intermediate.</li>
+                          <li><b>Php:</b> Intermediate.</li>
+                        </ul>    
+                      </div>
+                      <div class="col-md-6">
+                        <ul>
+                          <li><b>MySQL:</b> Advanced.</li>
+                          <li><b>C++:</b> Intermediate.</li>
+                          <li><b>Python:</b> Intermediate.</li>
+                          <li><b>C#:</b> Intermediate.</li>
+                          <li><b>Excel:</b> Advanced.</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="Contact">
-                    <h2>
-                      <i
-                        class="fas fa-address-card cv_icon"
-                      ></i>
-                      Contacto
+                    <h2 class="yellow">
+                      <i class="fas fa-address-card"></i>
+                      Contact
                     </h2>
                     <p>
-                      <i
-                        class="fas fa-bell"
-                        style="color: turquoise; font-size: 14px; margin-left: 30px;"
-                      ></i>
-                      Blvd Adolfo López Máteos 1661, Álvaro Obregón, Ciudad de México
+                      <i class="fas fa-bell light-blue ms-3"></i>
+                      Mexico City, Mexico.
                     </p>
                     <p>
-                      <i
-                        class="fas fa-envelope-square"
-                        style="color: turquoise; font-size: 14px; margin-left: 30px;"
-                      ></i
-                      ><a
-                        href="mailto:rualejandro.ra@gmail.com"
-                        style="color: teal; text-decoration: none;"
-                      >
+                      <i class="fas fa-envelope-square light-blue ms-3"></i>
+                      <a href="mailto:rualejandro.ra@gmail.com" class="yellow" style="text-decoration: none;">
                         rualejandro.ra@gmail.com
                       </a>
                     </p>
               
                     <p>
-                      <i
-                        class="fas fa-phone-square-alt"
-                        style="color: turquoise; font-size: 14px; margin-left: 30px;"
-                      ></i>
+                      <i class="fas fa-phone-square-alt light-blue ms-3"></i>
                       55 3560 7832
                     </p>
                   </div>
                   <div class="lang">
-                    <h2>
-                      <i
-                        class="fas fa-globe-americas"
-                        class="cv_icon"
-                      ></i>
+                    <h2 class="yellow">
+                      <i class="fas fa-globe-americas" class=""></i>
                       Idiomas
                     </h2>
-                    <p style="margin-left: 30px;">
-                      <b>Inglés:</b> Certificación Toefl iBT con 108 puntos.
+                    <p class="ms-5">
+                      <b>English: </b>iTP Toefl certification with score of 547.
                     </p>
-                  </div>
-                  <div class="video" style="margin-top: 50px;">
-                    <h2>
-                      <i class="fas fa-wifi" class="cv_icon"></i>
-                      Un poco de TI
-                    </h2>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/QjMJsQx_O7o"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
                   </div>
             </div>
           </div>
       </div>
-    
-    
+      <!-- Mobile display -->
+      <div class="container mt-med mb-5" id="cv-show-mobile">
+        <div class="row ms-5">
+          <div class="col-md-5 mt-5 mb-5">
+            <div class="text-center">
+              <h1>
+                About me
+              </h1>
+              <img src="../img/Ramon_ok.jpg" class="img-fluid"/>
+            </div>
+          </div>
+          <div class="col-md-7">
+              <div>
+                <h2 class="light-blue-bg dark-blue text-center" style="border-radius: 4px;">Ramón Alejando Ruiz Pérez</h2>
+                  <h2 class="yellow mt-3">
+                    <i class="fas fa-brain"></i>
+                    Personal profile
+                  </h2>
+                  <p class="ms-3">
+                    Im a IT student who likes to keep learning, with experience in web development
+                    and programming languages like Python, C++ and Java.
+                  </p>
+                </div>
+                <div class="row mt-4 mb-3">
+                  <div class="col-md-6">
+                    <h2  class="yellow">
+                      <i
+                        class="fas fa-book-open"
+                      ></i>
+                      Education
+                    </h2>
+                    <p class="ms-3">
+                      Digital systems technician by Bachillerato Tecnológico Plantel Azteca, 2019.
+                    </p>
+                    <ul class="ms-3">
+                      <li>Graduated with the highest grade.</li>
+                      <li>
+                        Representative of the high school in the United Nations Model at the Anahuac University, 2019.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <h2 class="yellow">
+                        <i
+                          class="fas fa-book-reader"
+                        ></i>
+                        Complementary eduaction
+                      </h2>
+                      <ul class="ms-3">
+                        <li>Word, Excel and PowerPoint certification by Microsoft.</li><br>
+                        <li>CCNA4 networking course by Cisco.</li><br>
+                        <li>Azure Fundamentals course</li>
+                      </ul>
+                  </div>
+                </div>
+                
+                <div class="job_xp">
+                  <h2 class="yellow">
+                    <i
+                      class="fas fa-briefcase "
+                    ></i>
+                    Job experience
+                  </h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="mt-3">
+                        Web development freelance
+                      </h3>
+                      <p class="ms-3 mb-0">
+                        SINCE FEBRUARY 2021
+                      </p>
+                      <ul class="ms-3">
+                        <li>Front and Backend development.</li><br><br>
+                        <li>Monitoring of statistics of the developed sites.</li><br><br>
+                        <li>Constant updating of the sites to allow their growth.</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="mt-3">
+                        Intern in the Public Relations finance area of the Universidad Panamericana 
+                      </h3>
+                      <p class="ms-3 mb-0">
+                        SINCE AUGUST 2019
+                      </p>
+                      <ul class="ms-3">
+                        <li>
+                          Responsible for recording expenses bills present in the area. 
+                        </li>
+                        <li>
+                          Monitoring of the expenses from the promotion in the states of the country.
+                        </li>
+                        <li>
+                          Preparation of biannual records for the Public Relations area. 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills">
+                  <h2 class="yellow">
+                    <i
+                      class="fab fa-audible "
+                    ></i>
+                    Skills
+                  </h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li><b>HTML5:</b> Advanced.</li>
+                        <li><b>Javascript:</b> Intermediate.</li>
+                        <li><b>CSS:</b> Advanced.</li>
+                        <li><b>NodeJs:</b> Intermediate.</li>
+                        <li><b>Php:</b> Intermediate.</li>
+                      </ul>    
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <li><b>MySQL:</b> Advanced.</li>
+                        <li><b>C++:</b> Intermediate.</li>
+                        <li><b>Python:</b> Intermediate.</li>
+                        <li><b>C#:</b> Intermediate.</li>
+                        <li><b>Excel:</b> Advanced.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="Contact">
+                  <h2 class="yellow">
+                    <i class="fas fa-address-card"></i>
+                    Contact
+                  </h2>
+                  <p>
+                    <i class="fas fa-bell light-blue ms-3"></i>
+                    Mexico City, Mexico.
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope-square light-blue ms-3"></i>
+                    <a href="mailto:rualejandro.ra@gmail.com" class="yellow" style="text-decoration: none;">
+                      rualejandro.ra@gmail.com
+                    </a>
+                  </p>
+            
+                  <p>
+                    <i class="fas fa-phone-square-alt light-blue ms-3"></i>
+                    55 3560 7832
+                  </p>
+                </div>
+                <div class="lang">
+                  <h2 class="yellow">
+                    <i class="fas fa-globe-americas" class=""></i>
+                    Idiomas
+                  </h2>
+                  <p class="ms-5">
+                    <b>English: </b>iTP Toefl certification with score of 547.
+                  </p>
+                </div>
+          </div>
+        </div>
+    </div>
+
+      <div class="position-relative mt-med">
+        <footer class="position-absolute bottom-0 start-50 translate-middle-x">
+          <!-- Copyright -->
+          <div class="text-center p-3">
+            © 2021 Ramón Ruiz
+            <a class="ms-5" href="https://github.com/RamonRuizPe"><i class="fab fa-github"></i></a>
+            <a class="ms-5" href="www.linkedin.com/in/ramón-alejandro-ruiz-pérez-122077221"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </footer>
+      </div>
   </body>
 </html>
